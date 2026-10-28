@@ -18,11 +18,11 @@ The cards are intended to work without Home Assistant. The bridge is for people 
 - Thoughtful about privacy, accessibility and everyday setup.
 - Designed around real cooking: readable steps, helpful search and fewer trips between screens.
 
-These are project goals; each repository will document what is implemented and tested as it becomes available.
+The Cards repository now contains the card package, an optional standalone Web app/PWA, and an independently generated fictional-data demo. The Bridge repository contains the optional Home Assistant integration. Each package has an independent validation checklist; no one package’s passing checks imply another package is ready.
 
 ## Project status
 
-The repositories are being prepared and do not yet have stable releases or verified installation guides. Please treat them as work in progress until a release and its setup instructions are published.
+The source has been imported into the existing public repositories while preserving their Git histories. The current 0.9.5 code is still a developer preview: do not treat local/mock checks as proof of live Mealie, Home Assistant, Bring, or physical-device compatibility. Follow each repository’s release checklist before installing or publishing a stable package.
 
 ## Follow the project
 
