@@ -17,6 +17,8 @@ Both project repositories currently contain status information only. Do not trea
 - [Discussions](https://github.com/orgs/mealie-atelier/discussions)
 - [Project site](https://alles-automatisch.de/)
 - [Brand assets and credits](brand/README.md)
+- [Repository map](docs/REPOSITORY_MAP.md)
+- [Website documentation plan](docs/WEBSITE_DOCUMENTATION_PLAN.md)
 - [Security reporting](SECURITY.md)
 - [Support](SUPPORT.md)
 
