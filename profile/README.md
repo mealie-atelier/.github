@@ -1,38 +1,35 @@
-# Mealie Atelier
+<p align="center"><img width="112" alt="Mealie Atelier icon: handmade pasta with tomatoes" src="https://raw.githubusercontent.com/mealie-atelier/.github/main/brand/mealie-atelier-icon-512.png"></p>
 
-<img align="right" width="112" alt="Mealie Atelier pasta and tomato mark" src="../brand/mealie-atelier.jpg">
+<h1 align="center">Mealie Atelier</h1>
 
-**Your recipes, ready for real life.**
+<p align="center"><strong>Your Mealie kitchen, beautifully at home in Home Assistant.</strong><br>Recipes, meal plans, shopping lists and a calm step-by-step cooking mode for the wall tablet and the phone, in German and English, light and dark.</p>
 
-Mealie Atelier is a project for making recipes easier to discover, plan and cook. We are building a polished recipe experience alongside optional Home Assistant tools for the kitchen.
+<p align="center">
+<a href="https://mealie.alles-automatisch.de"><strong>Try the live demo</strong></a> ·
+<a href="https://alles-automatisch.de/lernen/mealie-atelier">Documentation</a> ·
+<a href="https://github.com/orgs/mealie-atelier/discussions">Discussions</a> ·
+<a href="https://ko-fi.com/allesautomatisch">Ko-fi</a>
+</p>
 
-## What we are building
+<p align="center"><img width="860" alt="Mealie Atelier kitchen overview in a Home Assistant dashboard" src="https://raw.githubusercontent.com/mealie-atelier/mealie-atelier-cards/main/assets/screens/dashboard-light.webp"></p>
 
-- **[Atelier Cards](https://github.com/mealie-atelier/mealie-atelier-cards)** — a standalone-first recipe experience, with Home Assistant cards, meal planning and live search.
-- **[Atelier Bridge](https://github.com/mealie-atelier/mealie-atelier-bridge)** — an optional Home Assistant integration for connecting Mealie with practical kitchen workflows.
+## Projects
 
-The cards are intended to work without Home Assistant. The bridge is for people who want their kitchen connected.
+| | |
+| --- | --- |
+| **[Mealie Atelier Cards](https://github.com/mealie-atelier/mealie-atelier-cards)** | Ten dashboard cards for [Mealie](https://mealie.io): recipe collection, cooking mode, weekly planner, shopping with an offline queue, cook ideas and a print-ready cookbook. Also runs as a standalone web app. |
+| **[Mealie Atelier Bridge](https://github.com/mealie-atelier/mealie-atelier-bridge)** | The Home Assistant integration behind the cards: the Mealie token stays on the server, writes respect per-user grants, every recipe edit is backed up, and Smart Shopping Sync sends your list to Bring! or any To-do list. |
 
-## How we want it to feel
+Both are submitted to the default catalog used by the Home Assistant Marketplace and HACS; until they are listed, add them to HACS as custom repositories. The cards also work read-only with Home Assistant's built-in Mealie integration.
 
-- Clear and comfortable on phones, tablets and kitchen displays.
-- Useful in German and English, with room to add more languages cleanly.
-- Thoughtful about privacy, accessibility and everyday setup.
-- Designed around real cooking: readable steps, helpful search and fewer trips between screens.
+## Get involved
 
-The Cards repository now contains the card package, an optional standalone Web app/PWA, and an independently generated fictional-data demo. The Bridge repository contains the optional Home Assistant integration. Each package has an independent manual validation checklist; no one package’s passing checks imply another package is ready. The organization does not use GitHub Actions or automatic dependency-update pull requests.
+- Questions, ideas and your dashboards: [Discussions](https://github.com/orgs/mealie-atelier/discussions)
+- Bugs: issues in the [Cards](https://github.com/mealie-atelier/mealie-atelier-cards/issues) or [Bridge](https://github.com/mealie-atelier/mealie-atelier-bridge/issues) repository
+- Security: [private reporting](https://github.com/mealie-atelier/.github/blob/main/SECURITY.md)
 
-## Project status
+## Support the project
 
-The source has been imported into the existing public repositories while preserving their Git histories. The current 0.9.5 code is still a developer preview: do not treat local/mock checks as proof of live Mealie, Home Assistant, Bring, or physical-device compatibility. Follow each repository’s release checklist before installing or publishing a stable package.
+Mealie Atelier is free, open source and independent. If it makes your kitchen a little calmer, [buy me a coffee on Ko-fi](https://ko-fi.com/allesautomatisch) or [become a member of the Alles Automatisch YouTube channel](https://www.youtube.com/@alles-automatisch/join).
 
-## Follow the project
-
-- [Project site and documentation](https://alles-automatisch.de/)
-- [Browse all repositories](https://github.com/orgs/mealie-atelier/repositories)
-- [Current open work and release status](https://github.com/mealie-atelier/mealie-atelier-cards/blob/main/docs/OPEN_TODOS.md)
-- [Cards FAQ](https://github.com/mealie-atelier/mealie-atelier-cards/blob/main/docs/FAQ.md) · [Bridge FAQ](https://github.com/mealie-atelier/mealie-atelier-bridge/blob/main/docs/FAQ.md)
-- [Ask a question or share an idea](https://github.com/orgs/mealie-atelier/discussions)
-- [Support the project on Ko-fi](https://ko-fi.com/allesautomatisch) — completely optional.
-- [Cards: report a problem or suggest an idea](https://github.com/mealie-atelier/mealie-atelier-cards/issues/new)
-- [Bridge: report a problem or suggest an idea](https://github.com/mealie-atelier/mealie-atelier-bridge/issues/new)
+<p align="center"><sub>Made with love by Daniel Boberg · <a href="https://alles-automatisch.de">alles-automatisch.de</a> · Not affiliated with Mealie or Home Assistant</sub></p>

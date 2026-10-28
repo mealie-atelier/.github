@@ -12,4 +12,4 @@ Private reporting is enabled on all three public repositories. Include the affec
 
 ## Supported versions
 
-Neither project has a published release yet. A supported-version policy will be added with the first release.
+Security fixes go into the latest release of Mealie Atelier Cards and Mealie Atelier Bridge. Please update to it before reporting.
