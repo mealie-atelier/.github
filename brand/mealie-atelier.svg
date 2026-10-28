@@ -8,7 +8,7 @@
     <rect width="1024" height="1024" fill="#35262f"/>
     <circle cx="512" cy="512" r="390" fill="#f5ead4"/>
     <circle cx="512" cy="512" r="352" fill="none" stroke="#d8c6a7" stroke-width="8"/>
-    <image href="photographer-davide-ragusa-handmade-pasta.jpg" x="190" y="190" width="644" height="644" preserveAspectRatio="xMidYMid slice" clip-path="url(#pasta-photo)"/>
+    <image href="pasta-with-tomatoes.jpg" x="190" y="190" width="644" height="644" preserveAspectRatio="xMidYMid slice" clip-path="url(#pasta-photo)"/>
     <circle cx="512" cy="512" r="322" fill="none" stroke="#fff8e9" stroke-width="10"/>
     <path d="M256 776c70 54 164 85 258 86" fill="none" stroke="#d99a36" stroke-width="12" stroke-linecap="round"/>
     <circle cx="775" cy="758" r="15" fill="#c9503d"/>
