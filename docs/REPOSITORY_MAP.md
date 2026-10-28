@@ -33,3 +33,5 @@ See each product repository's README and release checklist for actual implementa
 
 - 2026-10-28 — Recorded the owner’s policy for manual maintenance and disabled GitHub Actions organization-wide along with automatic Dependabot update PRs in current product repositories.
 - 2026-10-28 — Replaced rounded icon and preview treatments with square-edged, self-contained pasta artwork; kept the source and every product export in sync.
+- 2026-10-28 — Linked the organization profile and support guide to the canonical open-work index and product FAQs; the product repositories currently have no open Issues, while documented release gates remain.
+- 2026-10-28 — Corrected the support page to distinguish publicly available developer-preview source from stable catalog packages and production releases.
