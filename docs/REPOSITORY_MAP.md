@@ -30,7 +30,7 @@ Do not create `mealie-atelier-web` until its canonical source boundary and initi
 ## Release and maintenance rules
 
 - Version and publish Web, Demo, Cards and Bridge independently, with explicit compatibility notes for each package.
-- Generate the demo from reviewed fictional recipes. Do not use household recipe exports, signed image URLs, credentials, browser state, or real shopping data.
+- Generate the demo from reviewed, genuinely cookable recipes. Include at least one recipe with step-level photography as well as cover photography, so the cooking flow proves that instructional images and text work together. Do not use household recipe exports, signed image URLs, credentials, browser state, or real shopping data.
 - Pin shared design tokens and language resources to a single source. Build reproducible outputs; never edit generated bundles by hand.
 - Use separate CI jobs for app tests, demo generation, card builds, integration checks, accessibility checks and release packaging.
 - Publish a release only after its own tests and compatibility gates pass. One package's green checks must not imply that another package passed.

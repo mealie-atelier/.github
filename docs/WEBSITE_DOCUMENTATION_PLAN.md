@@ -31,7 +31,7 @@ Every installation guide should distinguish required from optional steps, show a
 
 ## Demo, SEO and visual quality
 
-- Deploy the demo independently from the standalone production app. Use ten reviewed, genuinely cookable bilingual recipes written for the showcase and locally bundled food photography with documented licenses/credits.
+- Deploy the demo independently from the standalone production app. Use ten reviewed, genuinely cookable bilingual recipes written for the showcase and locally bundled food photography with documented licenses/credits. Include step-level images in at least one recipe so visitors can judge how cooking instructions and photos are composed together; the current archive fixture set has cover photos only.
 - Keep changes in the demo session only; do not call Mealie or Home Assistant and do not claim changes were saved to a server.
 - Provide semantic page content outside the interactive shell so search engines and assistive technology can understand the product and recipe examples.
 - Use a distinct title and meta description for the product overview, setup guides, troubleshooting and demo. Add `HowTo` structured data only to a genuinely step-by-step installation page.
