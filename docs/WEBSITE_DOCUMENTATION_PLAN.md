@@ -2,9 +2,9 @@
 
 ## Current site context
 
-[Alles Automatisch](https://alles-automatisch.de/) already has a German-first Home Assistant learning area at [`/lernen`](https://alles-automatisch.de/lernen). Its existing navigation groups guides under “Geräte verbinden”, “Dashboards & Energie”, “Smartphone & App”, and other practical topics. The site also has a support page at [`/unterstuetzen`](https://alles-automatisch.de/unterstuetzen).
+Reviewed on 2026-10-28: [Alles Automatisch](https://alles-automatisch.de/) already has a German-first Home Assistant learning area at [`/lernen`](https://alles-automatisch.de/lernen). Its existing navigation groups guides under “Geräte verbinden”, “Dashboards & Energie”, “Smartphone & App”, and other practical topics. The site also has a support page at [`/unterstuetzen`](https://alles-automatisch.de/unterstuetzen), which already includes Ko-fi.
 
-The current site is centered on Home Assistant guides. Mealie Atelier also includes a planned standalone recipe experience, so the documentation should have its own product overview and then link into the existing learning categories. The site currently exposes no visible language switch or English documentation route; verify the CMS language setup before promising English pages.
+The current site is centered on Home Assistant guides. Mealie Atelier also includes a planned standalone recipe experience, so the documentation should have its own product overview and then link into the existing learning categories. The homepage and learning index reviewed expose no visible language switch or English documentation route; verify the CMS language setup before promising English pages.
 
 ## Recommended information architecture
 
