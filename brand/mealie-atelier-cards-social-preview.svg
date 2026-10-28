@@ -13,4 +13,5 @@
   <text x="125" y="521" fill="#F6EDDD" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">HOME ASSISTANT</text>
   <text x="100" y="582" fill="#776D79" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="1.9">MEAL PLANNING  ·  COOKING  ·  COMFORT</text>
   <path d="M618 0v640" stroke="#302632" stroke-opacity=".08" stroke-width="2"/>
+  <image href="mealie-atelier-cards-icon-512.png" x="1050" y="420" width="166" height="166"/>
 </svg>

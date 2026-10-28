@@ -9,10 +9,5 @@
   <text x="100" y="425" fill="#302632" font-family="Arial, Helvetica, sans-serif" font-size="28">to your kitchen.</text>
   <text x="100" y="521" fill="#776D79" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="1.9">HOME ASSISTANT  ·  INTEGRATIONS  ·  SYNC</text>
   <rect x="640" width="640" height="640" fill="#302632"/>
-  <circle cx="960" cy="320" r="225" fill="#F6EDDD"/>
-  <rect x="786" y="245" width="145" height="150" rx="24" fill="#FFFAF0" stroke="#302632" stroke-width="12"/>
-  <path d="M815 288h87M815 316h63" stroke="#D8C7AA" stroke-width="11" stroke-linecap="round"/>
-  <path d="M931 320c42-62 79-62 120 0" fill="none" stroke="#E6533D" stroke-width="15" stroke-linecap="round"/>
-  <circle cx="1080" cy="320" r="58" fill="#FFFAF0" stroke="#302632" stroke-width="12"/>
-  <path d="M1054 320h52m-26-26v52" stroke="#302632" stroke-width="12" stroke-linecap="round"/>
+  <image href="mealie-atelier-bridge-icon-512.png" x="744" y="65" width="432" height="432"/>
 </svg>
