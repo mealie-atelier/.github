@@ -1,5 +1,7 @@
 # Mealie Atelier
 
+<img align="right" width="112" alt="Mealie Atelier pasta and tomato mark" src="../brand/mealie-atelier.jpg">
+
 **Your recipes, ready for real life.**
 
 Mealie Atelier is a project for making recipes easier to discover, plan and cook. We are building a polished recipe experience alongside optional Home Assistant tools for the kitchen.
@@ -18,7 +20,7 @@ The cards are intended to work without Home Assistant. The bridge is for people 
 - Thoughtful about privacy, accessibility and everyday setup.
 - Designed around real cooking: readable steps, helpful search and fewer trips between screens.
 
-The Cards repository now contains the card package, an optional standalone Web app/PWA, and an independently generated fictional-data demo. The Bridge repository contains the optional Home Assistant integration. Each package has an independent validation checklist; no one package’s passing checks imply another package is ready.
+The Cards repository now contains the card package, an optional standalone Web app/PWA, and an independently generated fictional-data demo. The Bridge repository contains the optional Home Assistant integration. Each package has an independent manual validation checklist; no one package’s passing checks imply another package is ready. The organization does not use GitHub Actions or automatic dependency-update pull requests.
 
 ## Project status
 
