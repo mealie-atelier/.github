@@ -29,5 +29,6 @@ The repositories are being prepared and do not yet have stable releases or verif
 - [Project site and documentation](https://alles-automatisch.de/)
 - [Browse all repositories](https://github.com/orgs/mealie-atelier/repositories)
 - [Ask a question or share an idea](https://github.com/orgs/mealie-atelier/discussions)
+- [Support the project on Ko-fi](https://ko-fi.com/allesautomatisch) — completely optional.
 - [Cards: report a problem or suggest an idea](https://github.com/mealie-atelier/mealie-atelier-cards/issues/new)
 - [Bridge: report a problem or suggest an idea](https://github.com/mealie-atelier/mealie-atelier-bridge/issues/new)
