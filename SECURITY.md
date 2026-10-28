@@ -4,10 +4,11 @@
 
 Please do not report security vulnerabilities in public issues or discussions. Use GitHub's private vulnerability reporting for the affected repository:
 
+- [Report a community-files repository vulnerability](https://github.com/mealie-atelier/.github/security/advisories/new)
 - [Report a Cards vulnerability](https://github.com/mealie-atelier/mealie-atelier-cards/security/advisories/new)
 - [Report a Bridge vulnerability](https://github.com/mealie-atelier/mealie-atelier-bridge/security/advisories/new)
 
-Private reporting is enabled on both repositories. Include the affected repository, a concise impact description, and steps to reproduce when safe. Do not include household recipe data, access tokens, or other personal information.
+Private reporting is enabled on all three public repositories. Include the affected repository, a concise impact description, and steps to reproduce when safe. Do not include household recipe data, access tokens, or other personal information.
 
 ## Supported versions
 
