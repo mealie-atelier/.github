@@ -3,8 +3,9 @@
 ## Photography
 
 - Cards social preview: Davide Ragusa, [Person making noodles](https://unsplash.com/photos/person-making-noodles-FwiLgvi-2Do), Unsplash License.
+- Organization and app icons: Davide Ragusa, [Person making noodles](https://unsplash.com/photos/person-making-noodles-FwiLgvi-2Do), Unsplash License. The icon uses a square crop of the original photograph.
 
-Attribution is not required by the Unsplash License; it is included here to credit the photographer. The app and organization icon is drawn as editable SVG artwork and does not use stock or generated photography.
+Attribution is not required by the Unsplash License; it is included here to credit the photographer. The SVG icon master references the original local JPEG; PNG sizes are generated from that master.
 
 ## Export dimensions
 

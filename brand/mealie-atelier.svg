@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
-  <title id="title">Mealie Atelier — handmade pasta ribbon mark</title>
-  <rect width="1024" height="1024" fill="#302632"/>
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M275 755C350 579 429 383 494 292c24-34 49-33 72 4 67 108 126 294 185 459" stroke="#E4B767" stroke-width="86"/>
-    <path d="M376 527c91-45 184-48 271-4" stroke="#E4B767" stroke-width="78"/>
-    <path d="M275 755C350 579 429 383 494 292c24-34 49-33 72 4 67 108 126 294 185 459" stroke="#F7E6BD" stroke-width="7" opacity=".62"/>
-    <path d="M376 527c91-45 184-48 271-4" stroke="#F7E6BD" stroke-width="6" opacity=".62"/>
+  <title id="title">Handmade pasta ribbons for Mealie Atelier</title>
+  <defs>
+    <clipPath id="avatar-crop"><rect width="1024" height="1024"/></clipPath>
+  </defs>
+  <g clip-path="url(#avatar-crop)">
+    <image href="photographer-davide-ragusa-handmade-pasta.jpg" x="-233" y="0" width="1490" height="1024" preserveAspectRatio="none"/>
+    <rect width="1024" height="1024" fill="#35262f" opacity=".06"/>
   </g>
 </svg>
