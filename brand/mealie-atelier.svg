@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">Mealie Atelier app and organization icon</title>
+  <defs>
+    <clipPath id="plate"><circle cx="512" cy="512" r="420"/></clipPath>
+  </defs>
+  <rect width="1024" height="1024" fill="#292333"/>
+  <image href="photographer-brett-wharton-creamy-tagliatelle.jpg" x="92" y="92" width="840" height="840" preserveAspectRatio="xMidYMid slice" clip-path="url(#plate)"/>
+  <circle cx="512" cy="512" r="430" fill="none" stroke="#f6eddd" stroke-width="18"/>
+  <circle cx="512" cy="512" r="407" fill="none" stroke="#d99a36" stroke-width="5"/>
+</svg>
