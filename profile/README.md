@@ -2,7 +2,7 @@
 
 **Your recipes, ready for real life.**
 
-Mealie Atelier is an open-source project for making recipes easier to discover, plan and cook. We are building a polished recipe experience alongside optional Home Assistant tools for the kitchen.
+Mealie Atelier is a project for making recipes easier to discover, plan and cook. We are building a polished recipe experience alongside optional Home Assistant tools for the kitchen.
 
 ## What we are building
 
