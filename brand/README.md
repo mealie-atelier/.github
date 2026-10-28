@@ -13,8 +13,8 @@ Mealie Atelier uses an editorial close crop of real pasta being made by hand. Th
 ## Repository previews
 
 - `mealie-atelier-cards-social-preview.png` and `mealie-atelier-bridge-social-preview.png` are 1280 × 640 GitHub previews.
-- The matching SVG files are editable source artwork. They use the same type hierarchy and palette as the icon.
-- The Cards preview uses a real pasta-making photograph credited in `CREDITS.md`.
+- The matching SVG files are editable source artwork, with the warm editorial palette carried across both repository previews.
+- The Cards preview uses the same real pasta-making photograph as the icon, credited in `CREDITS.md`.
 
 ## Exporting
 
