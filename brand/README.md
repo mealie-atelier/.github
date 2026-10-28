@@ -1,22 +1,31 @@
 # Brand assets
 
-This folder contains the current Mealie Atelier identity assets, prepared for GitHub profiles and future app distribution.
+Mealie Atelier uses a compact, hand-drawn pasta-ribbon mark: one tagliatelle ribbon forms the Atelier “A”. The flat mark is designed to stay legible in GitHub's circular avatar crop, PWA icons and small in-app placements. Its restrained palette pairs aubergine, warm pasta gold and cream; no generated food imagery is used in the identity mark.
 
 ## App icons
 
-- mealie-atelier.png is the 1024px master used for the organization avatar.
-- mealie-atelier.svg is the editable icon source.
-- The 192px, 512px, maskable 512px and Apple touch icon exports are ready for PWA and iOS manifests.
+- `mealie-atelier.svg` is the editable vector master.
+- `mealie-atelier.png` is the 1024 × 1024 organization-avatar master.
+- `mealie-atelier-icon-192.png` and `mealie-atelier-icon-512.png` are PWA exports.
+- `mealie-atelier-maskable-512.png` is a 512 × 512 maskable export with the mark kept within the safe area.
+- `mealie-atelier-apple-touch-icon.png` is the 180 × 180 Apple touch icon.
 
 ## Repository previews
 
-- mealie-atelier-cards-social-preview.png is the Cards repository preview.
-- mealie-atelier-bridge-social-preview.png is the Bridge repository preview.
-- The SVG files are editable source artwork. They reference the adjacent photographer images.
+- `mealie-atelier-cards-social-preview.png` and `mealie-atelier-bridge-social-preview.png` are 1280 × 640 GitHub previews.
+- The matching SVG files are editable source artwork. They use the same type hierarchy and palette as the icon.
+- The Cards preview uses a real pasta-making photograph credited in `CREDITS.md`.
 
-## Photography credits
+## Exporting
 
-- App icon and Cards recipe inset: Brett Wharton, [Unsplash photo](https://unsplash.com/photos/a-plate-of-pasta-with-meat-and-vegetables-K4oM_d4bBPY).
-- Cards preview hero: davide ragusa, [Unsplash photo](https://unsplash.com/photos/person-making-noodles-FwiLgvi-2Do).
+From this folder, regenerate all icon PNGs and social previews with `rsvg-convert`:
 
-The images are used under the Unsplash License. Photographer credits are included as a courtesy.
+```sh
+rsvg-convert -w 1024 -h 1024 mealie-atelier.svg > mealie-atelier.png
+rsvg-convert -w 512 -h 512 mealie-atelier.svg > mealie-atelier-icon-512.png
+rsvg-convert -w 192 -h 192 mealie-atelier.svg > mealie-atelier-icon-192.png
+rsvg-convert -w 512 -h 512 mealie-atelier.svg > mealie-atelier-maskable-512.png
+rsvg-convert -w 180 -h 180 mealie-atelier.svg > mealie-atelier-apple-touch-icon.png
+rsvg-convert -w 1280 -h 640 mealie-atelier-cards-social-preview.svg > mealie-atelier-cards-social-preview.png
+rsvg-convert -w 1280 -h 640 mealie-atelier-bridge-social-preview.svg > mealie-atelier-bridge-social-preview.png
+```
