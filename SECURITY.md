@@ -12,7 +12,7 @@ Private reporting is enabled on all three public repositories. Include the affec
 
 ## Reporting a conduct concern
 
-Conduct reports under the [Code of Conduct](CODE_OF_CONDUCT.md) use the same private form as the community-files repository above. Start the title with "Conduct report". Only the maintainers can read it.
+Conduct reports under the [Code of Conduct](CODE_OF_CONDUCT.md) use the private form for the community-files repository above. Start the title with "Conduct report". Only the maintainers can read it.
 
 ## Supported versions
 
