@@ -36,7 +36,7 @@ This Code of Conduct applies within all community spaces, and also when an indiv
 
 ## Reporting
 
-Report unacceptable behavior privately through the [private reporting channel](SECURITY.md) of this organization. All reports are reviewed and investigated promptly and fairly, and the privacy and security of the reporter is respected.
+Report unacceptable behavior privately to the maintainers through the [private advisory form](https://github.com/mealie-atelier/.github/security/advisories/new) of the community-files repository. Start the title with "Conduct report" and describe what happened, where, and who was involved. All reports are reviewed and investigated promptly and fairly, and the privacy and security of the reporter are respected.
 
 ## Enforcement guidelines
 
