@@ -10,6 +10,12 @@ Public profile, shared community files and brand masters of the [Mealie Atelier 
 
 Cards and Bridge are released independently. Each repository has its own changelog.
 
+## Where things are
+
+- [`profile/README.md`](profile/README.md): the profile shown on the organization page.
+- [`SUPPORT.md`](SUPPORT.md), [`SECURITY.md`](SECURITY.md), [`FUNDING.yml`](FUNDING.yml): defaults inherited by repositories that do not define their own.
+- [`brand/`](brand/README.md): icons, social previews and credits.
+
 ## Brand asset use
 
 The `brand/` directory holds the organization icon, the product icons and the repository social previews. Photography credits and export steps are in [`brand/CREDITS.md`](brand/CREDITS.md) and [`brand/README.md`](brand/README.md). These notes do not grant a license to reuse the project identity or artwork.
