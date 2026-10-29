@@ -1,15 +1,15 @@
 #!/bin/zsh
 # Render the 1280x640 GitHub social previews (org, Cards, Bridge) into ../social/.
 # Lockup on the Night plate colour plus a one-line English tagline. Run publish.py first.
-# Needs: Google Chrome, ImageMagick 7.
+# Needs: Google Chrome or Chromium (set CHROME to override), ImageMagick 7.
 set -euo pipefail
 cd ${0:A:h}
-C="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+source ${0:A:h}/chrome.sh
 OUT=../social; mkdir -p $OUT tmp
 typeset -A TAG LOGO
 TAG=(org "Your Mealie kitchen, beautifully at home in Home Assistant."
      cards "Dashboard cards for Mealie recipes, plans and shopping."
-     bridge "The Home Assistant integration that keeps your Mealie safe.")
+     bridge "The Home Assistant integration behind Mealie Atelier.")
 LOGO=(org lockup-transparent cards lockup-cards-transparent bridge lockup-bridge-transparent)
 for k in org cards bridge; do
   n=mealie-atelier-social-preview; [[ $k != org ]] && n=mealie-atelier-$k-social-preview

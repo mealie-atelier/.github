@@ -50,23 +50,23 @@ SVG files are in `svg/`, PNG and ICO files in `png/`.
 | GitHub org avatar | `mealie-atelier-avatar-500.png` (full bleed, survives the circular crop) |
 | Repository social preview | `social/mealie-atelier-social-preview.png`, `social/mealie-atelier-cards-social-preview.png`, `social/mealie-atelier-bridge-social-preview.png` (and `.jpg`) |
 | One colour (print, engraving, embossing), 180 px and up | `mealie-atelier-mark-mono.svg` (with today's accent line) |
-| One colour below 180 px | `mealie-atelier-mark-mono-small.svg`; at exactly 32 or 48 px the pixel masters `*-mark-mono-32.svg` / `*-mark-mono-48.svg` where a family has them (Cards, Bridge, web app); at 16 px and for the Safari pinned tab `mealie-atelier-mark-mono-16.svg` |
+| One colour below 180 px | `mealie-atelier-mark-mono-small.svg`; at exactly 32 or 48 px the pixel masters `mealie-atelier-<family>-mark-mono-32.svg` / `-mark-mono-48.svg` where a family has them (Cards, Bridge, web app); at 16 px and for the Safari pinned tab `mealie-atelier-mark-mono-16.svg` |
 | Wordmark lockup | `mealie-atelier-lockup-dark.svg` (on Night), `mealie-atelier-lockup-light.svg` (on Oat), `mealie-atelier-lockup-dark-transparent.svg` (dark grounds), `mealie-atelier-lockup-light-transparent.svg` (light grounds) |
 
 The mono masters use the solid style: one solid disc, the seven sections separated by notch cuts, the
-glyph knocked out. From 180 px up (`*-mono.svg`) today carries one subtle accent: a thin knocked-out line,
+glyph knocked out. From 180 px up (`mealie-atelier-mark-mono.svg`) today carries one subtle accent: a thin knocked-out line,
 exactly as wide as a notch, between today's section and the well, so today reads as its own solid block.
 Below 180 px there is no accent at all; a cut that thin would blur into a crack or read as a bite. The
-small master (`*-mono-small.svg`) widens the notch slightly so it stays a whole pixel at 32 px, and the
+small master (`mealie-atelier-mark-mono-small.svg`) widens the notch slightly so it stays a whole pixel at 32 px, and the
 16 px master drops the notches and keeps only the disc with the glyph knocked out.
 
 Small sizes are drawn on the pixel grid where scaling would blur:
 
 - Bridge at 16 and 32 px (colour, mono, favicons, ico): one full-width deck bar over one wide stepped
   arch between two solid piers. Three arches read as a comb at 32 px and a single arch in a block as a
-  tunnel at 16 px. From 48 px the three-arch viaduct returns (`bridge-48.svg`, `bridge-mono-48.svg` with
-  whole-pixel piers, `bridge.svg` above).
-- Cards and web app at 32 and 48 px (`*-32.svg`, `*-48.svg`, `*-mono-32.svg`, `*-mono-48.svg`): card gaps
+  tunnel at 16 px. From 48 px the three-arch viaduct returns (`mealie-atelier-bridge-mark-48.svg`,
+  `mealie-atelier-bridge-mark-mono-48.svg` with whole-pixel piers, `mealie-atelier-bridge-mark.svg` above).
+- Cards and web app at 32 and 48 px (`mealie-atelier-<family>-mark-32.svg`, `-mark-48.svg`, `-mark-mono-32.svg`, `-mark-mono-48.svg`): card gaps
   and window frames on whole pixels, so they stay crisp instead of a grey smear.
 
 ## Clear space
@@ -81,12 +81,12 @@ Small sizes are drawn on the pixel grid where scaling would blur:
 
 | Version | Minimum |
 |---|---|
-| Colour tile or plate (`mark.svg`, `mark-transparent*.svg`) | 32 px (below that use the 16 px master) |
-| 16 px colour master (`mark-16.svg`, `favicon.svg`) | 16 px, made for 16 to 31 px |
-| Pixel tiles (`*-32.svg`, `*-48.svg`) | exactly 32 and 48 px; from 49 px use the full master |
-| Mono with accent (`mark-mono.svg`) | 180 px |
-| Mono small (`mark-mono-small.svg`) | 32 px, made for 32 to 179 px (pixel masters at exactly 32 and 48 px where they exist) |
-| Mono 16 px (`mark-mono-16.svg`) | 16 px, made for 16 to 31 px |
+| Colour tile or plate (`mealie-atelier-mark.svg`, `mealie-atelier-mark-transparent.svg`, `mealie-atelier-mark-light-transparent.svg`) | 32 px (below that use the 16 px master) |
+| 16 px colour master (`mealie-atelier-mark-16.svg`, `mealie-atelier-favicon.svg`) | 16 px, made for 16 to 31 px |
+| Pixel tiles (`mealie-atelier-<family>-mark-32.svg`, `-mark-48.svg`) | exactly 32 and 48 px; from 49 px use the full master |
+| Mono with accent (`mealie-atelier-mark-mono.svg`) | 180 px |
+| Mono small (`mealie-atelier-mark-mono-small.svg`) | 32 px, made for 32 to 179 px (pixel masters at exactly 32 and 48 px where they exist) |
+| Mono 16 px (`mealie-atelier-mark-mono-16.svg`) | 16 px, made for 16 to 31 px |
 | Lockup | 24 px plate height on screen, 10 mm in print |
 
 ## Do
@@ -101,9 +101,9 @@ Small sizes are drawn on the pixel grid where scaling would blur:
 - Don't recolour parts of the mark, swap Herb and Mint, or put a Herb glyph on the Night plate.
 - Don't rotate the plate, move today to another section or add a second accent section.
 - Don't add strokes, shadows, gradients, outlines or a needle; the mark is flat fills only.
-- Don't place the cream plate (`mark-transparent.svg`) on white or cream; use the Night plate there.
+- Don't place the cream plate (`mealie-atelier-mark-transparent.svg`) on white or cream; use the Night plate there.
 - Don't scale the full master below 32 px; use the 16 px master. Don't use the mono master with the
-  accent line below 180 px; use `*-mono-small.svg` or the pixel masters.
+  accent line below 180 px; use `mealie-atelier-mark-mono-small.svg` or the pixel masters.
 - Don't re-set the wordmark in another font or weight; it is Bricolage Grotesque (SIL OFL 1.1), outlined.
 - Don't crop the maskable or avatar files to anything smaller than the 80 % safe circle.
 
@@ -111,13 +111,16 @@ Small sizes are drawn on the pixel grid where scaling would blur:
 
 Everything under `svg/`, `png/` and `social/` is generated from `source/`. Requirements: macOS or Linux with
 Python 3.14 and `uv`, the Python packages `skia-pathops`, `fonttools` and `uharfbuzz` (installed into a local
-`source/venv` by `make.sh`), Google Chrome (headless renders) and ImageMagick 7 (`magick`).
+`source/venv` by `make.sh`), Google Chrome or Chromium (headless renders) and ImageMagick 7 (`magick`). The
+scripts look for the browser in this order: the `CHROME` environment variable, the macOS Google Chrome app,
+then `google-chrome`, `chromium` or `chromium-browser` on `PATH`. If none is found they stop with a message.
+Example: `CHROME=/usr/bin/chromium ./make.sh`.
 
 ```sh
 cd brand/source
 ./make.sh                          # masters, checks, renders, rollout set in source/out/
 venv/bin/python publish.py         # copy into ../svg and ../png under the mealie-atelier- names
-./social.sh                        # 1280 x 640 social previews into ../social
+./social.sh                        # 1280 × 640 social previews into ../social
 ```
 
 `check.py` and `check_png.py` fail the build if glyph and plate colours are mixed or a small size renders wrongly.

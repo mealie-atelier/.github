@@ -1,7 +1,8 @@
 #!/bin/zsh
 # Rebuild every Week Dial deliverable from scratch: SVG masters, checks, PNG renders, the rollout set in
 # out/, the manifest out/FILES.md and the sheets. Nothing in out/ is edited by hand.
-# Needs: python3.14 + uv (venv is created on first run), ImageMagick 7 (magick), Google Chrome.
+# Needs: python3.14 + uv (venv is created on first run), ImageMagick 7 (magick), Google Chrome or Chromium
+# (found automatically, or set CHROME=/path/to/chrome).
 set -euo pipefail
 cd ${0:A:h}
 D=$PWD
@@ -17,6 +18,7 @@ venv/bin/python wordmark.py
 venv/bin/python check.py
 
 # ---------------------------------------------------------------- renders (headless Chrome)
+source ./chrome.sh                           # fail early with a clear message if no Chrome is found
 for d in png out tmp; do [[ -d $d ]] && rm -r $d; done
 mkdir -p png out/svg tmp
 VARIANTS=(mark cards bridge webapp)
@@ -24,7 +26,7 @@ jobs=tmp/jobs.txt; : > $jobs
 for v in $VARIANTS; do
   print "$v-16.svg 16 png/$v-16.png" >> $jobs
   print "$v-mono-16.svg 16 png/$v-mono-16.png" >> $jobs
-  for s in 32 48; do                          # pixel-tuned tile where one exists (bridge)
+  for s in 32 48; do                          # pixel-tuned tile where one exists (bridge, cards, webapp)
     m=$v.svg; [[ -f $v-$s.svg ]] && m=$v-$s.svg
     print "$m $s png/$v-$s.png" >> $jobs
   done

@@ -2,7 +2,7 @@
 # usage: render.sh in.svg width out.png [height]
 # Chrome headless sometimes hangs with tiny windows, so small icons render in a 128 px window and are cropped.
 D=${0:A:h}
-C="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+source ${0:A:h}/chrome.sh
 mkdir -p $D/tmp
 P=$(mktemp -d $D/tmp/prof.XXXX)
 W=$2; HH=${4:-$2}
