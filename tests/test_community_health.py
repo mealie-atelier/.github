@@ -9,9 +9,9 @@ FILES = [
     "CODE_OF_CONDUCT.md",
     "CONTRIBUTING.md",
     "LICENSE",
-    "pull_request_template.md",
-    "ISSUE_TEMPLATE/bug_report.md",
-    "ISSUE_TEMPLATE/feature_request.md",
+    ".github/pull_request_template.md",
+    ".github/ISSUE_TEMPLATE/bug_report.md",
+    ".github/ISSUE_TEMPLATE/feature_request.md",
 ]
 
 
