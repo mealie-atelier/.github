@@ -5,3 +5,11 @@ CLAUDE.local.md
 .claude/
 .mcp.json
 AGENTS.md
+
+# Brand generator working files (rebuilt by brand/source/make.sh)
+brand/source/venv/
+brand/source/tmp/
+brand/source/out/
+brand/source/png/
+brand/source/__pycache__/
+brand/source/*.svg

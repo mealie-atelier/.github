@@ -18,4 +18,4 @@ Cards and Bridge are released independently. Each repository has its own changel
 
 ## Brand asset use
 
-The `brand/` directory holds the organization icon, the product icons and the repository social previews. Photography credits and export steps are in [`brand/CREDITS.md`](brand/CREDITS.md) and [`brand/README.md`](brand/README.md). These notes do not grant a license to reuse the project identity or artwork.
+The `brand/` directory holds the Week Dial marks, lockups, icons and repository social previews. Font credits and rebuild steps are in [`brand/CREDITS.md`](brand/CREDITS.md) and [`brand/README.md`](brand/README.md). These notes do not grant a license to reuse the project identity or artwork.

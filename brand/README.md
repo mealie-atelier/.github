@@ -1,39 +1,128 @@
-# Brand assets
+# Mealie Atelier brand: Week Dial
 
-Mealie Atelier uses a warm editorial identity built around its original pasta-and-tomato photograph. Product graphics use square, full-bleed compositions and crisp, straight edges. Cards and Bridge share the same food photography and palette while their names and simple marks keep the products distinct. GitHub applies its own circular crop to the organization avatar.
+A cream plate seen from above. Its rim is notched into seven day sections, one of them (today) in
+paprika. On the plate sits a glyph: the herb leaf for Mealie Atelier itself, a card grid for Cards, a
+three-arch bridge for Bridge, a browser window for the web app.
 
-## App icons
+This folder is the single source of truth for the brand. Every file is generated; never edit an SVG or PNG by hand.
 
-- `mealie-atelier.svg` is the standalone, square organization-avatar master; `mealie-atelier.png` is its 1024 × 1024 export and `mealie-atelier.jpg` is the lightweight upload-ready GitHub avatar.
-- `mealie-atelier-icon-192.png`, `mealie-atelier-icon-512.png`, `mealie-atelier-maskable-512.png` and `mealie-atelier-apple-touch-icon.png` are photo-only PWA and Apple exports.
-- `mealie-atelier-cards-icon.svg` and `mealie-atelier-bridge-icon.svg` are the product masters. Each has 192, 512 and 1024 pixel PNG exports.
-- Each SVG is self-contained and embeds the source photo. This keeps previews and raster exports reliable in tools that do not resolve relative image paths.
-- The original source photograph remains in `pasta-with-tomatoes.jpg`; its origin is documented in `CREDITS.md`.
+| Folder | Content |
+|---|---|
+| `svg/` | vector masters: marks, mono, transparent, maskable, pixel-tuned small sizes, lockups |
+| `png/` | raster and icon deliverables: favicons, apple-touch, web app icons, Home Assistant brand set, avatar |
+| `social/` | 1280 × 640 GitHub social previews (PNG and JPG under 1 MB) for the organization, Cards and Bridge |
+| `source/` | generator, font and its licence |
 
-## Repository previews
+All file names start with `mealie-atelier-`. Families: no infix is the organization mark (herb leaf);
+`cards-`, `bridge-` and `webapp-` follow the prefix (for example `mealie-atelier-cards-mark.svg`).
 
-- `mealie-atelier-cards-social-preview.png` and `mealie-atelier-bridge-social-preview.png` are 1280 × 640 masters; their matching `.jpg` exports are optimized for GitHub uploads under its 1 MB limit.
-- The matching SVG files are editable, self-contained source artwork.
-- Both previews use editorial two-column layouts with square photo edges, strong type, and a single gold divider. There are no floating icon tiles, rounded photo frames, or capsule labels.
+## Palette
 
-## Exporting
+| Token | Hex | Role |
+|---|---|---|
+| Night | `#14201A` | tile background, dark plate, wordmark on light grounds |
+| Night rim | `#2B3B31` | divider line on the night plate |
+| Oat | `#F2E9D8` | cream plate, light tile, wordmark on dark grounds |
+| Oat rim | `#DCCDB0` | divider line on the cream plate |
+| Herb | `#3E6B48` | glyph on the cream plate, product name on light grounds |
+| Mint | `#9DCBB2` | glyph on the night plate, product name on dark grounds (the `--demo-brand` colour of the UI) |
+| Paprika | `#B8532E` | today's section, in every colour version |
 
-On macOS, use the built-in `sips` tool from this directory to regenerate the PNGs from the SVG masters:
+**Glyph colour follows the plate, never the background:** Herb on the Oat plate, Mint on the Night plate.
+No file mixes them; `check.py` fails the build if one does. Mono versions use one colour only (black in the
+masters; recolour freely, e.g. white on dark).
+
+## Which file for which use
+
+File names below are for the main mark; family files carry `cards-`, `bridge-` or `webapp-` after `mealie-atelier-`.
+SVG files are in `svg/`, PNG and ICO files in `png/`.
+
+| Use | File |
+|---|---|
+| App icon, store artwork, README | `mealie-atelier-mark.svg`, `mealie-atelier-icon-512.png` (rounded Night tile, cream plate) |
+| App icon in a light context | `mealie-atelier-mark-light.svg` (Oat tile, Night plate) |
+| Plate without tile on dark or mid-tone grounds | `mealie-atelier-mark-transparent.svg`, `mealie-atelier-ha-dark-icon.png` |
+| Plate without tile on light grounds | `mealie-atelier-mark-light-transparent.svg`, `mealie-atelier-ha-icon.png` |
+| Home Assistant brands (integration or plugin) | `ha-icon`, `ha-icon@2x`, `ha-dark-icon`, `ha-dark-icon@2x`, `ha-logo`, `ha-logo@2x`, `ha-dark-logo`, `ha-dark-logo@2x` (`.png`). In the brands repository drop `mealie-atelier-<family>-ha-` and use `icon.png`, `dark_icon.png`, `logo.png`, `dark_logo.png` |
+| Browser tab | `mealie-atelier-favicon.svg` (pixel-tuned 16 px master), `mealie-atelier-favicon-16.png`, `mealie-atelier-favicon-32.png`, `mealie-atelier-favicon.ico` (16/32/48) |
+| iOS home screen | `mealie-atelier-apple-touch-icon.png` (180, opaque, full bleed; iOS rounds the corners) |
+| Web app manifest | `mealie-atelier-icon-192.png`, `mealie-atelier-icon-512.png` (purpose `any`), `mealie-atelier-icon-maskable-512.png` (purpose `maskable`) |
+| GitHub org avatar | `mealie-atelier-avatar-500.png` (full bleed, survives the circular crop) |
+| Repository social preview | `social/mealie-atelier-social-preview.png`, `social/mealie-atelier-cards-social-preview.png`, `social/mealie-atelier-bridge-social-preview.png` (and `.jpg`) |
+| One colour (print, engraving, embossing), 180 px and up | `mealie-atelier-mark-mono.svg` (with today's accent line) |
+| One colour below 180 px | `mealie-atelier-mark-mono-small.svg`; at exactly 32 or 48 px the pixel masters `*-mark-mono-32.svg` / `*-mark-mono-48.svg` where a family has them (Cards, Bridge, web app); at 16 px and for the Safari pinned tab `mealie-atelier-mark-mono-16.svg` |
+| Wordmark lockup | `mealie-atelier-lockup-dark.svg` (on Night), `mealie-atelier-lockup-light.svg` (on Oat), `mealie-atelier-lockup-dark-transparent.svg` (dark grounds), `mealie-atelier-lockup-light-transparent.svg` (light grounds) |
+
+The mono masters use the solid style: one solid disc, the seven sections separated by notch cuts, the
+glyph knocked out. From 180 px up (`*-mono.svg`) today carries one subtle accent: a thin knocked-out line,
+exactly as wide as a notch, between today's section and the well, so today reads as its own solid block.
+Below 180 px there is no accent at all; a cut that thin would blur into a crack or read as a bite. The
+small master (`*-mono-small.svg`) widens the notch slightly so it stays a whole pixel at 32 px, and the
+16 px master drops the notches and keeps only the disc with the glyph knocked out.
+
+Small sizes are drawn on the pixel grid where scaling would blur:
+
+- Bridge at 16 and 32 px (colour, mono, favicons, ico): one full-width deck bar over one wide stepped
+  arch between two solid piers. Three arches read as a comb at 32 px and a single arch in a block as a
+  tunnel at 16 px. From 48 px the three-arch viaduct returns (`bridge-48.svg`, `bridge-mono-48.svg` with
+  whole-pixel piers, `bridge.svg` above).
+- Cards and web app at 32 and 48 px (`*-32.svg`, `*-48.svg`, `*-mono-32.svg`, `*-mono-48.svg`): card gaps
+  and window frames on whole pixels, so they stay crisp instead of a grey smear.
+
+## Clear space
+
+- Plate on its own: keep free space of at least half the plate radius (a quarter of the plate diameter)
+  on every side. The rounded tile already contains its clear space; keep at least an eighth of the tile
+  width free around it.
+- Lockup: at least the plate radius on every side of the lockup's bounding box. Do not move the wordmark
+  closer to the plate than the generated lockup does.
+
+## Minimum size
+
+| Version | Minimum |
+|---|---|
+| Colour tile or plate (`mark.svg`, `mark-transparent*.svg`) | 32 px (below that use the 16 px master) |
+| 16 px colour master (`mark-16.svg`, `favicon.svg`) | 16 px, made for 16 to 31 px |
+| Pixel tiles (`*-32.svg`, `*-48.svg`) | exactly 32 and 48 px; from 49 px use the full master |
+| Mono with accent (`mark-mono.svg`) | 180 px |
+| Mono small (`mark-mono-small.svg`) | 32 px, made for 32 to 179 px (pixel masters at exactly 32 and 48 px where they exist) |
+| Mono 16 px (`mark-mono-16.svg`) | 16 px, made for 16 to 31 px |
+| Lockup | 24 px plate height on screen, 10 mm in print |
+
+## Do
+
+- Use the generated files as they are; pick the version by background (table above).
+- Keep today's section at the upper right, centred on the leaf's axis.
+- Keep the glyph colour paired to the plate colour (Herb on Oat, Mint on Night).
+- Use the mono master for single-colour reproduction and recolour it as a whole.
+
+## Don't
+
+- Don't recolour parts of the mark, swap Herb and Mint, or put a Herb glyph on the Night plate.
+- Don't rotate the plate, move today to another section or add a second accent section.
+- Don't add strokes, shadows, gradients, outlines or a needle; the mark is flat fills only.
+- Don't place the cream plate (`mark-transparent.svg`) on white or cream; use the Night plate there.
+- Don't scale the full master below 32 px; use the 16 px master. Don't use the mono master with the
+  accent line below 180 px; use `*-mono-small.svg` or the pixel masters.
+- Don't re-set the wordmark in another font or weight; it is Bricolage Grotesque (SIL OFL 1.1), outlined.
+- Don't crop the maskable or avatar files to anything smaller than the 80 % safe circle.
+
+## Rebuild
+
+Everything under `svg/`, `png/` and `social/` is generated from `source/`. Requirements: macOS or Linux with
+Python 3.14 and `uv`, the Python packages `skia-pathops`, `fonttools` and `uharfbuzz` (installed into a local
+`source/venv` by `make.sh`), Google Chrome (headless renders) and ImageMagick 7 (`magick`).
 
 ```sh
-sips -s format png -z 1024 1024 mealie-atelier.svg --out mealie-atelier.png
-sips -s format jpeg -s formatOptions 86 mealie-atelier.png --out mealie-atelier.jpg
-sips -s format png -z 192 192 mealie-atelier.svg --out mealie-atelier-icon-192.png
-sips -s format png -z 512 512 mealie-atelier.svg --out mealie-atelier-icon-512.png
-sips -s format png -z 512 512 mealie-atelier.svg --out mealie-atelier-maskable-512.png
-sips -s format png -z 180 180 mealie-atelier.svg --out mealie-atelier-apple-touch-icon.png
-for name in mealie-atelier-cards mealie-atelier-bridge; do
-  for size in 192 512 1024; do
-    sips -s format png -z "$size" "$size" "$name-icon.svg" --out "$name-icon-$size.png"
-  done
-done
-sips -s format png mealie-atelier-cards-social-preview.svg --out mealie-atelier-cards-social-preview.png
-sips -s format jpeg -s formatOptions 86 mealie-atelier-cards-social-preview.png --out mealie-atelier-cards-social-preview.jpg
-sips -s format png mealie-atelier-bridge-social-preview.svg --out mealie-atelier-bridge-social-preview.png
-sips -s format jpeg -s formatOptions 86 mealie-atelier-bridge-social-preview.png --out mealie-atelier-bridge-social-preview.jpg
+cd brand/source
+./make.sh                          # masters, checks, renders, rollout set in source/out/
+venv/bin/python publish.py         # copy into ../svg and ../png under the mealie-atelier- names
+./social.sh                        # 1280 x 640 social previews into ../social
 ```
+
+`check.py` and `check_png.py` fail the build if glyph and plate colours are mixed or a small size renders wrongly.
+`make.sh` also writes working files (`venv/`, `png/`, `out/`, `tmp/`, generated `*.svg`) inside `source/`;
+they are git-ignored. Edit the generator (`build.py` for marks, `wordmark.py` for lockups), never the output.
+
+The wordmark font is Bricolage Grotesque, licensed under the SIL Open Font License 1.1 (`source/font/OFL.txt`);
+see `CREDITS.md`.

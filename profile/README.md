@@ -1,4 +1,4 @@
-<p align="center"><img width="112" alt="Mealie Atelier icon: handmade pasta with tomatoes" src="https://raw.githubusercontent.com/mealie-atelier/.github/main/brand/mealie-atelier-icon-512.png"></p>
+<p align="center"><img width="112" alt="Mealie Atelier icon: a cream plate with seven day sections, today in paprika" src="https://raw.githubusercontent.com/mealie-atelier/.github/main/brand/png/mealie-atelier-icon-512.png"></p>
 
 <h1 align="center">Mealie Atelier</h1>
 
