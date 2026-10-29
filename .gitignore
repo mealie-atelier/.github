@@ -13,3 +13,7 @@ brand/source/out/
 brand/source/png/
 brand/source/__pycache__/
 brand/source/*.svg
+
+# Python bytecode
+__pycache__/
+*.pyc
