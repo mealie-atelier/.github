@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a setup question or share an idea
+    url: https://github.com/orgs/mealie-atelier/discussions
+    about: Ask setup questions and share ideas in Discussions. Open an issue for a reproducible bug.
