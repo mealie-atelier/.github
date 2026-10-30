@@ -11,7 +11,7 @@ This folder is the single source of truth for the brand. Every file is generated
 | `svg/` | vector masters: marks, mono, transparent, maskable, pixel-tuned small sizes, lockups |
 | `png/` | raster and icon deliverables: favicons, apple-touch, web app icons, Home Assistant brand set, avatar |
 | `social/` | 1280 × 640 GitHub social previews (PNG and JPG under 1 MB) for the organization, Cards and Bridge |
-| `source/` | generator, font and its licence |
+| `source/` | generator, font and its license |
 
 All file names start with `mealie-atelier-`. Families: no infix is the organization mark (herb leaf);
 `cards-`, `bridge-` and `webapp-` follow the prefix (for example `mealie-atelier-cards-mark.svg`).
@@ -25,12 +25,12 @@ All file names start with `mealie-atelier-`. Families: no infix is the organizat
 | Oat | `#F2E9D8` | cream plate, light tile, wordmark on dark grounds |
 | Oat rim | `#DCCDB0` | divider line on the cream plate |
 | Herb | `#3E6B48` | glyph on the cream plate, product name on light grounds |
-| Mint | `#9DCBB2` | glyph on the night plate, product name on dark grounds (the `--demo-brand` colour of the UI) |
-| Paprika | `#B8532E` | today's section, in every colour version |
+| Mint | `#9DCBB2` | glyph on the night plate, product name on dark grounds (the `--demo-brand` color of the UI) |
+| Paprika | `#B8532E` | today's section, in every color version |
 
-**Glyph colour follows the plate, never the background:** Herb on the Oat plate, Mint on the Night plate.
-No file mixes them; `check.py` fails the build if one does. Mono versions use one colour only (black in the
-masters; recolour freely, e.g. white on dark).
+**Glyph color follows the plate, never the background:** Herb on the Oat plate, Mint on the Night plate.
+No file mixes them; `check.py` fails the build if one does. Mono versions use one color only (black in the
+masters; recolor freely, e.g. white on dark).
 
 ## Which file for which use
 
@@ -49,8 +49,8 @@ SVG files are in `svg/`, PNG and ICO files in `png/`.
 | Web app manifest | `mealie-atelier-icon-192.png`, `mealie-atelier-icon-512.png` (purpose `any`), `mealie-atelier-icon-maskable-512.png` (purpose `maskable`) |
 | GitHub org avatar | `mealie-atelier-avatar-500.png` (full bleed, survives the circular crop) |
 | Repository social preview | `social/mealie-atelier-social-preview.png`, `social/mealie-atelier-cards-social-preview.png`, `social/mealie-atelier-bridge-social-preview.png` (and `.jpg`) |
-| One colour (print, engraving, embossing), 180 px and up | `mealie-atelier-mark-mono.svg` (with today's accent line) |
-| One colour below 180 px | `mealie-atelier-mark-mono-small.svg`; at exactly 32 or 48 px the pixel masters `mealie-atelier-<family>-mark-mono-32.svg` / `-mark-mono-48.svg` where a family has them (Cards, Bridge, web app); at 16 px and for the Safari pinned tab `mealie-atelier-mark-mono-16.svg` |
+| One color (print, engraving, embossing), 180 px and up | `mealie-atelier-mark-mono.svg` (with today's accent line) |
+| One color below 180 px | `mealie-atelier-mark-mono-small.svg`; at exactly 32 or 48 px the pixel masters `mealie-atelier-<family>-mark-mono-32.svg` / `-mark-mono-48.svg` where a family has them (Cards, Bridge, web app); at 16 px and for the Safari pinned tab `mealie-atelier-mark-mono-16.svg` |
 | Wordmark lockup | `mealie-atelier-lockup-dark.svg` (on Night), `mealie-atelier-lockup-light.svg` (on Oat), `mealie-atelier-lockup-dark-transparent.svg` (dark grounds), `mealie-atelier-lockup-light-transparent.svg` (light grounds) |
 
 The mono masters use the solid style: one solid disc, the seven sections separated by notch cuts, the
@@ -62,12 +62,12 @@ small master (`mealie-atelier-mark-mono-small.svg`) widens the notch slightly so
 
 Small sizes are drawn on the pixel grid where scaling would blur:
 
-- Bridge at 16 and 32 px (colour, mono, favicons, ico): one full-width deck bar over one wide stepped
+- Bridge at 16 and 32 px (color, mono, favicons, ico): one full-width deck bar over one wide stepped
   arch between two solid piers. Three arches read as a comb at 32 px and a single arch in a block as a
   tunnel at 16 px. From 48 px the three-arch viaduct returns (`mealie-atelier-bridge-mark-48.svg`,
   `mealie-atelier-bridge-mark-mono-48.svg` with whole-pixel piers, `mealie-atelier-bridge-mark.svg` above).
 - Cards and web app at 32 and 48 px (`mealie-atelier-<family>-mark-32.svg`, `-mark-48.svg`, `-mark-mono-32.svg`, `-mark-mono-48.svg`): card gaps
-  and window frames on whole pixels, so they stay crisp instead of a grey smear.
+  and window frames on whole pixels, so they stay crisp instead of a gray smear.
 
 ## Clear space
 
@@ -81,8 +81,8 @@ Small sizes are drawn on the pixel grid where scaling would blur:
 
 | Version | Minimum |
 |---|---|
-| Colour tile or plate (`mealie-atelier-mark.svg`, `mealie-atelier-mark-transparent.svg`, `mealie-atelier-mark-light-transparent.svg`) | 32 px (below that use the 16 px master) |
-| 16 px colour master (`mealie-atelier-mark-16.svg`, `mealie-atelier-favicon.svg`) | 16 px, made for 16 to 31 px |
+| Color tile or plate (`mealie-atelier-mark.svg`, `mealie-atelier-mark-transparent.svg`, `mealie-atelier-mark-light-transparent.svg`) | 32 px (below that use the 16 px master) |
+| 16 px color master (`mealie-atelier-mark-16.svg`, `mealie-atelier-favicon.svg`) | 16 px, made for 16 to 31 px |
 | Pixel tiles (`mealie-atelier-<family>-mark-32.svg`, `-mark-48.svg`) | exactly 32 and 48 px; from 49 px use the full master |
 | Mono with accent (`mealie-atelier-mark-mono.svg`) | 180 px |
 | Mono small (`mealie-atelier-mark-mono-small.svg`) | 32 px, made for 32 to 179 px (pixel masters at exactly 32 and 48 px where they exist) |
@@ -92,13 +92,13 @@ Small sizes are drawn on the pixel grid where scaling would blur:
 ## Do
 
 - Use the generated files as they are; pick the version by background (table above).
-- Keep today's section at the upper right, centred on the leaf's axis.
-- Keep the glyph colour paired to the plate colour (Herb on Oat, Mint on Night).
-- Use the mono master for single-colour reproduction and recolour it as a whole.
+- Keep today's section at the upper right, centered on the leaf's axis.
+- Keep the glyph color paired to the plate color (Herb on Oat, Mint on Night).
+- Use the mono master for single-color reproduction and recolor it as a whole.
 
 ## Don't
 
-- Don't recolour parts of the mark, swap Herb and Mint, or put a Herb glyph on the Night plate.
+- Don't recolor parts of the mark, swap Herb and Mint, or put a Herb glyph on the Night plate.
 - Don't rotate the plate, move today to another section or add a second accent section.
 - Don't add strokes, shadows, gradients, outlines or a needle; the mark is flat fills only.
 - Don't place the cream plate (`mealie-atelier-mark-transparent.svg`) on white or cream; use the Night plate there.
@@ -123,7 +123,7 @@ venv/bin/python publish.py         # copy into ../svg and ../png under the meali
 ./social.sh                        # 1280 × 640 social previews into ../social
 ```
 
-`check.py` and `check_png.py` fail the build if glyph and plate colours are mixed or a small size renders wrongly.
+`check.py` and `check_png.py` fail the build if glyph and plate colors are mixed or a small size renders wrongly.
 `make.sh` also writes working files (`venv/`, `png/`, `out/`, `tmp/`, generated `*.svg`) inside `source/`;
 they are git-ignored. Edit the generator (`build.py` for marks, `wordmark.py` for lockups), never the output.
 

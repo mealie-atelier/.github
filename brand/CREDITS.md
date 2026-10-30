@@ -2,7 +2,7 @@
 
 ## Typeface
 
-- Wordmark and social preview text: [Bricolage Grotesque](https://github.com/ateliertriay/bricolage), SIL Open Font License 1.1. The font file and licence are in `source/font/` (`BricolageGrotesque.ttf`, `OFL.txt`). The wordmark in the lockups is outlined to paths.
+- Wordmark and social preview text: [Bricolage Grotesque](https://github.com/ateliertriay/bricolage), SIL Open Font License 1.1. The font file and license are in `source/font/` (`BricolageGrotesque.ttf`, `OFL.txt`). The wordmark in the lockups is outlined to paths.
 
 ## Marks
 
