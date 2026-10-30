@@ -11,7 +11,7 @@
 <a href="https://ko-fi.com/allesautomatisch">Ko-fi</a>
 </p>
 
-<p align="center"><img width="860" alt="Mealie Atelier kitchen overview in a Home Assistant dashboard" src="https://raw.githubusercontent.com/mealie-atelier/mealie-atelier-cards/main/assets/screens/dashboard-light.webp"></p>
+<p align="center"><img width="860" alt="Mealie Atelier kitchen overview in a Home Assistant dashboard" src="https://raw.githubusercontent.com/mealie-atelier/.github/main/profile/dashboard-light.webp"></p>
 
 ## Projects
 
