@@ -20,7 +20,7 @@
 
 Cards and Bridge are both submitted to the default catalog used by the Home Assistant Marketplace and HACS; until they are listed, add them to HACS as custom repositories. The cards also work read-only with Home Assistant's built-in Mealie integration.
 
-Using the standalone web app without Home Assistant? It can sync your shopping list to Bring! on its own. Inside Home Assistant the Bridge does the same job, so pick the route that fits your setup.
+Using the standalone web app without Home Assistant? It can [sync your shopping list to Bring!](https://github.com/mealie-atelier/mealie-atelier-cards/blob/main/web/README.md#smart-shopping-sync-to-bring) on its own. Inside Home Assistant the Bridge does the same job, so pick the route that fits your setup.
 
 ## Get involved
 
