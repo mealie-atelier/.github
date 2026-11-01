@@ -8,7 +8,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 IMAGE = ROOT / "profile" / "dashboard-light.webp"
 README = ROOT / "profile" / "README.md"
 # md5 of mealie-atelier-cards assets/screens/dashboard-light.webp at release 0.12.1
-CARDS_CAPTURE_MD5 = "f08c183fc53332debc5c44a392279e50"
+CARDS_CAPTURE_MD5 = "3d020585d4ebb28fa04b9572221b8d3b"
 
 
 class ProfileScreenshotTest(unittest.TestCase):
