@@ -17,3 +17,6 @@ brand/source/*.svg
 # Python bytecode
 __pycache__/
 *.pyc
+
+# macOS folder metadata
+.DS_Store
