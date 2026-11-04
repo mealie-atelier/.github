@@ -18,7 +18,7 @@
 - **[Mealie Atelier Cards](https://github.com/mealie-atelier/mealie-atelier-cards)**: ten dashboard cards for [Mealie](https://mealie.io) with a recipe collection, cooking mode, weekly planner, shopping with an offline queue, Discover and a print-ready cookbook. Also runs as a standalone web app.
 - **[Mealie Atelier Bridge](https://github.com/mealie-atelier/mealie-atelier-bridge)**: the Home Assistant integration behind the cards. The Mealie token stays on the server, writes respect per-user grants, every recipe edit is backed up, and Smart Shopping Sync sends your list to any To-do list, such as Bring! through its Home Assistant integration.
 
-Cards and Bridge are both submitted to the default catalog used by the Home Assistant Marketplace and HACS; until they are listed, add them to HACS as custom repositories. The cards also work read-only with Home Assistant's built-in Mealie integration.
+The cards are listed in the default catalog used by the Home Assistant Marketplace and HACS: search for **Mealie Atelier Cards**. If the search does not find them yet, add them through **Add from link** in the Marketplace or as a custom repository in HACS. The Bridge is submitted and waits for review; until it is listed, add it the same way. The cards also work read-only with Home Assistant's built-in Mealie integration.
 
 Using the standalone web app without Home Assistant? It can [sync your shopping list to Bring!](https://github.com/mealie-atelier/mealie-atelier-cards/blob/main/web/README.md#smart-shopping-sync-to-bring) on its own. Inside Home Assistant the Bridge does the same job, so pick the route that fits your setup.
 
